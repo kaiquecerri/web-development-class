@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --preto: #363232;
+  --cinza: #565656;
+  --cinza_claro: #6b6b6b;
+  --rosa: #eea1e3;
+  --rosa_claro: #f4b5eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--preto); /* cinza clarinho */
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  padding: 0px 20px 0px 20px;
+}
+
+h1 {
+  color: var(--azul_claro); /* azul escuro */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  border-radius: 100%;
+  margin-right: 20px;
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin-right: 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--preto);
+  background-color: var(--rosa);
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  background-color: var(--rosa_claro);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--rosa);
+}
+
+.linha {
+  display: flex;
+  justify-content: space-around;
+}
+
+.linha #sobre {
+  width: 50%;
+}
+
+.linha #habilidades {
+  width: 30%;
+}
+
+section a {
+  color: var(--rosa_claro);
+  text-decoration: none;
+}
+
+header section ul {
+  padding: 0;
+  display: flex;
+}
+
+header section li {
+  list-style-type: none;
+}
+
+header section li img {
+  width: 50px;
+  border-radius: 0;
+}
