@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Raleway:wght@400;600;700;800&display=swap");
+
+/* ==========================================================================
+   Variáveis e Reset Global
+   ========================================================================== */
+:root {
+  --preto: #1a1818;
+  --fundo-card: #282525;
+  --cinza: #363232;
+  --cinza_claro: #565656;
+  --texto-suave: #d1d5db;
+  --rosa: #eea1e3;
+  --rosa_claro: #f4b5eb;
+  --sombra: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+  --radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--preto);
+  color: #f3f4f6;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+main, header, nav, footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Cabeçalho / Perfil (Ajustado)
+   ========================================================================== */
+header {
+  background-color: var(--fundo-card);
+  border: 1px solid rgba(238, 161, 227, 0.15);
+  border-radius: var(--radius);
+  padding: 35px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 35px;
+  box-shadow: var(--sombra);
+  margin-bottom: 25px;
+}
+
+header > img {
+  width: 140px;
+  height: 140px;
+  min-width: 140px; /* Evita que a foto esmague em telas médias */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--rosa);
+  box-shadow: 0 0 20px rgba(238, 161, 227, 0.25);
+}
+
+header section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+
+header section h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+header section p {
+  color: var(--texto-suave);
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+header section p strong {
+  color: var(--rosa_claro);
+}
+
+/* Links / Ícones Sociais alinhados */
+#links {
+  background: transparent;
+  padding: 0;
+  margin-top: 10px;
+  box-shadow: none;
+  border: none;
+}
+
+#links ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+#links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#links li img {
+  width: 36px;
+  height: 36px;
+  padding: 7px;
+  background-color: var(--cinza);
+  border-radius: 10px;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#links li img:hover {
+  background-color: var(--rosa);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(238, 161, 227, 0.3);
+  filter: brightness(1.1);
+}
+
+/* Ajuste Responsivo da Header para Celular */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  header section {
+    align-items: center;
+  }
+
+  #links ul {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Navegação
+   ========================================================================== */
+hr {
+  display: none; /* Escondendo o hr padrão para layout limpo */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--preto);
+  background-color: var(--rosa);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+  background-color: var(--rosa_claro);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(238, 161, 227, 0.4);
+}
+
+/* ==========================================================================
+   Seções e Títulos
+   ========================================================================== */
+section {
+  background-color: var(--fundo-card);
+  border-radius: var(--radius);
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: var(--sombra);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--rosa);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: var(--rosa_claro);
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+p {
+  margin-bottom: 15px;
+  color: var(--texto-suave);
+  text-align: justify;
+}
+
+section a {
+  color: var(--rosa_claro);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: var(--rosa);
+}
+
+/* ==========================================================================
+   Layout de Linha (Sobre mim + Habilidades)
+   ========================================================================== */
+.linha {
+  display: flex;
+  gap: 25px;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.linha #sobre {
+  flex: 1.4;
+  margin-bottom: 0;
+}
+
+.linha #habilidades {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Tabelas (Habilidades e Rotina)
+   ========================================================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: none !important;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--cinza);
+  color: var(--rosa_claro);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+td, tr th {
+  font-weight: normal;
+}
+
+tr {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition);
+}
+
+tr:hover {
+  background-color: rgba(238, 161, 227, 0.05);
+}
+
+/* ==========================================================================
+   Hobbies e Galeria
+   ========================================================================== */
+#hobbies ul, #sites ol, #objetivos ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: var(--texto-suave);
+}
+
+#hobbies li, #sites li, #objetivos li {
+  margin-bottom: 8px;
+}
+
+#hobbies h3 {
+  margin: 20px 0 15px 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* Layout em grade para as imagens da galeria */
+#hobbies {
+  display: block;
+}
+
+#hobbies img {
+  width: calc(20% - 12px);
+  min-width: 130px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 5px;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+#hobbies img:hover {
+  transform: scale(1.05);
+  border-color: var(--rosa);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   Formulário de Contato
+   ========================================================================== */
+#contato-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contato-form label {
+  color: var(--rosa_claro);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#contato-form input,
+#contato-form select,
+#contato-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--cinza);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  margin-bottom: 15px;
+}
+
+#contato-form input:focus,
+#contato-form select:focus,
+#contato-form textarea:focus {
+  outline: none;
+  border-color: var(--rosa);
+  box-shadow: 0 0 8px rgba(238, 161, 227, 0.3);
+}
+
+#contato-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#contato-form button {
+  background-color: var(--rosa);
+  color: var(--preto);
+  font-weight: 700;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+#contato-form button:hover {
+  background-color: var(--rosa_claro);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(238, 161, 227, 0.3);
+}
+
+/* ==========================================================================
+   Rodapé
+   ========================================================================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--cinza_claro);
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   Responsividade (Telas menores / Dispositivos Móveis)
+   ========================================================================== */
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linha {
+    flex-direction: column;
+  }
+
+  .linha #sobre,
+  .linha #habilidades {
+    width: 100%;
+  }
+
+  #hobbies img {
+    width: calc(50% - 15px);
+  }
+}
