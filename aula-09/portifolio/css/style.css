@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --preto: #363232;
+  --cinza: #565656;
+  --cinza_claro: #6b6b6b;
+  --rosa: #eea1e3;
+  --rosa_claro: #f4b5eb;
+
+  --sombra: 0px 4px 29px -2px var(--preto);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(29, 29, 29); 
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  padding: 0px 20px 0px 20px;
+}
+
+h1 {
+  color: var(--azul_claro); 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  border-radius: 100%;
+  margin-right: 20px;
+  width: 200px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-right: 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--preto);
+  background-color: var(--rosa);
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.5s;
+  box-shadow: var(--sombra);
+}
+
+nav a:hover {
+  background-color: var(--rosa_claro);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--rosa);
+  padding-bottom: 10px;
+  border-color: var(--rosa);
+  border-bottom: 1px solid;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linha #sobre {
+  width: 55%;
+}
+
+.linha #habilidades {
+  width: 35%;
+}
+
+section a {
+  color: var(--rosa_claro);
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+header section ul {
+  padding: 0;
+  display: flex;
+}
+
+header section li {
+  list-style-type: none;
+}
+
+header section li img {
+  width: 50px;
+  border-radius: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 80px;
+}
+
+.card {
+  background-color: var(--preto);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--cinza);
+  box-shadow: var(--sombra);
+  margin-bottom: 30px;
+  min-width: 0; 
+  flex-wrap: wrap;
+  
+}
+
+table {
+  border: 0px;
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-word;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid var(--rosa);
+  border-radius: 2px;
+  padding: 1px;
+  padding: 5px;
+}
+
+#hobbies section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#hobbies section img {
+  width:200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+  border: 2px solid transparent;
+}
+
+#hobbies section img:hover {
+  transform: scale(1.05);
+  border-color: var(--rosa);
+  box-shadow: var(--sombra);
+}
+
+#sites ol {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+#rotina section{
+  display: flex;
+  justify-content: center;
+}
+
+#habilidades section{
+  display: flex;
+  justify-content: center;
+}
+
+#contato-form form{
+  display: flex;
+  flex-direction: column;
+}
+
+#contato-form form input, textarea, select {
+  margin-bottom: 20px;
+  background-color: #363232;
+  border: 1px solid var(--rosa);
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+#contato-form button {
+  background-color: var(--rosa);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 8px;
+  color: var(--preto);
+  transition: 1s;
+}
+
+#contato-form button:hover {
+  background-color: var(--rosa_claro);
+  border: 1px solid var(--rosa);
+  border-radius: 5px;
+  padding: 8px;
+  color: var(--preto);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
