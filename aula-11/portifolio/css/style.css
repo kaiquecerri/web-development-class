@@ -31,6 +31,10 @@ h1 {
   color: var(--azul_claro);
 }
 
+span {
+  cursor: pointer;
+}
+
 header {
   display: grid;
   grid-template-columns: minmax(0, 1fr);

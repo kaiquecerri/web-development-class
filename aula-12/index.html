@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="titulo">Meu Portfólio</h1>
+    <div id="caixa" style="background: yellow; padding: 20px">
+      Conteúdo da caixa
+    </div>
+    <button onclick="alternarVisibilidade()">Mostrar/Esconder</button>
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+    <script>
+      let quer = prompt("Quer atualizar? s/n");
+      if (quer === "s") {
+        document.getElementById("titulo").innerHTML = "Portfólio Atualizado";
+        document.getElementById("titulo").style.color = "red";
+      }
+      /*alert("Bem-vindo ao meu site!");
+        console.log("Olá, mundo!");
+        let nome = prompt("Qual é o seu nome?");
+        alert("Olá, " + nome);*/
+
+      function mostrarMensagem() {
+        alert("Você clicou no botão!");
+      }
+      function alternarVisibilidade() {
+        let caixa = document.getElementById("caixa");
+        if (caixa.style.display === "none") {
+          caixa.style.display = "block";
+        } else {
+          caixa.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
