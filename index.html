@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Kaique Cerri Fialho: estudos, habilidades e interesses em tecnologia."
+    />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>Kaique Cerri Fialho | Portfólio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="status-dot"></span> Portfólio pessoal</p>
+        <h1>Oi, eu sou <span>Kaique Cerri</span></h1>
+        <p class="hero__intro">
+          Estudante de Análise e Desenvolvimento de Sistemas, curioso por
+          tecnologia e sempre aprendendo algo novo.
+        </p>
+        <div class="hero__details">
+          <span>ADS · FATEC Carapicuíba</span>
+          <span>Barueri, SP</span>
+        </div>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#sobre">Conheça meu perfil</a>
+          <a class="button button--outline" href="#contato-form">Vamos conversar</a>
+        </div>
+        <div class="social-links" aria-label="Redes e contato">
+          <a href="https://github.com/kaiquecerri" target="_blank" rel="noopener noreferrer">
+            <img src="imagens/github_icon.webp" alt="" />
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kaique-cerri-fialho"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="imagens/linkedin_icon.webp" alt="" />
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:kaiquecerrifialho1@gmail.com">
+            <img src="imagens/mail_icon.webp" alt="" />
+            <span>E-mail</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-frame">
+          <img
+            src="imagens/profile.jpeg"
+            alt="Kaique posando em frente ao espelho"
+            class="hero__image"
+          />
+        </div>
+        <div class="counter-card">
+          <span class="counter-card__label">Visitantes curiosos</span>
+          <button
+            class="counter-card__button"
+            type="button"
+            onclick="adicionarContador()"
+            aria-label="Adicionar um ao contador"
+          >
+            <span id="contador">0</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+          <span class="counter-card__hint">Clique para contar você</span>
+        </div>
+        <span class="hero__sparkle" aria-hidden="true">✳</span>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="site-nav__brand" href="#inicio">KC<span>.</span></a>
+      <div class="site-nav__links">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#hobbies">Interesses</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#rotina">Estudos</a>
+        <a href="#contato-form">Contato</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="section-grid" aria-label="Perfil e habilidades">
+        <section id="sobre" class="card card--about">
+          <p class="eyebrow">01 / Um pouco sobre mim</p>
+          <h2>Transformando curiosidade em projetos.</h2>
+          <p>
+            Atualmente estudo Análise e Desenvolvimento de Sistemas na FATEC de
+            Carapicuíba. Concluí o curso técnico de Informática para Internet na
+            FIEB em 2025 e estou estudando TypeScript.
+          </p>
+          <p>
+            Tenho contato com Node.js, Express, React, Java, MySQL, Python e
+            Power BI. Também fiz curso profissionalizante de Manutenção de
+            Computadores e trabalho de forma autônoma nessa área.
+          </p>
+          <p>
+            Já criei jogos simples de plataforma com GameMaker — uma experiência
+            que me aproximou ainda mais de lógica de programação e criação de
+            sprites. Gosto de estudar tecnologia porque cada aprendizado abre
+            espaço para criar, ajudar e experimentar.
+          </p>
+          <div class="about-note">
+            <span aria-hidden="true">✦</span>
+            <p>Aprender, construir e continuar evoluindo.</p>
+          </div>
+        </section>
+
+        <section id="habilidades" class="card">
+          <p class="eyebrow">02 / Ferramentas</p>
+          <h2>Habilidades</h2>
+          <p class="section-lead">Tecnologias e experiências que fazem parte da minha jornada.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Tecnologia</th>
+                  <th scope="col">Nível</th>
+                  <th scope="col">Experiência</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">HTML</th><td>Intermediário</td><td>3 anos</td></tr>
+                <tr><th scope="row">CSS</th><td>Intermediário</td><td>3 anos</td></tr>
+                <tr><th scope="row">JavaScript</th><td>Intermediário</td><td>3 anos</td></tr>
+                <tr><th scope="row">TypeScript</th><td>Básico</td><td>6 meses</td></tr>
+                <tr><th scope="row">Node.js</th><td>Intermediário</td><td>3 anos</td></tr>
+                <tr><th scope="row">Express.js</th><td>Intermediário</td><td>2 anos</td></tr>
+                <tr><th scope="row">React</th><td>Intermediário</td><td>1 ano</td></tr>
+                <tr><th scope="row">Java</th><td>Básico</td><td>9 meses</td></tr>
+                <tr><th scope="row">Python</th><td>Básico</td><td>9 meses</td></tr>
+                <tr><th scope="row">GameMaker</th><td>Intermediário</td><td>4 anos</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section id="hobbies" class="card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / Fora do código</p>
+            <h2>Interesses que me inspiram</h2>
+          </div>
+          <p class="section-lead">Um pouco do que gosto de fazer no tempo livre.</p>
+        </div>
+        <ul class="interest-list">
+          <li>Tocar violão</li>
+          <li>Programar</li>
+          <li>Filmes e séries</li>
+          <li>Jogar</li>
+          <li>Ouvir música</li>
+        </ul>
+        <div class="hobby-gallery">
+          <figure>
+            <img src="imagens/violao.webp" alt="Meme sobre violão" loading="lazy" />
+            <figcaption>Violão</figcaption>
+          </figure>
+          <figure>
+            <img src="imagens/programador.webp" alt="Pessoa digitando em um teclado" loading="lazy" />
+            <figcaption>Programação</figcaption>
+          </figure>
+          <figure>
+            <img src="imagens/filme.webp" alt="Pessoa surpresa assistindo a um filme" loading="lazy" />
+            <figcaption>Filmes e séries</figcaption>
+          </figure>
+          <figure>
+            <img src="imagens/Jogo.webp" alt="Pokémon X e um Nintendo 3DS XL sobre uma mesa" loading="lazy" />
+            <figcaption>Jogos</figcaption>
+          </figure>
+          <figure>
+            <img src="imagens/musica.webp" alt="Homem rockeiro com uma caixa de som" loading="lazy" />
+            <figcaption>Música</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-grid section-grid--lower">
+        <section id="objetivos" class="card">
+          <p class="eyebrow">04 / Próximos passos</p>
+          <h2>Objetivos profissionais</h2>
+          <ol class="timeline">
+            <li>
+              <span class="timeline__term">Curto prazo · 6 meses</span>
+              <p>
+                Me manter na vaga híbrida de desenvolvimento como júnior e
+                aprender mais sobre programação.
+              </p>
+            </li>
+            <li>
+              <span class="timeline__term">Médio prazo · 1–2 anos</span>
+              <p>Trabalhar 100% home office na área de desenvolvimento.</p>
+            </li>
+            <li>
+              <span class="timeline__term">Longo prazo · 3–5 anos</span>
+              <p>
+                Conseguir um emprego remoto fora do Brasil, ganhando em dólar ou
+                euro e continuando a morar aqui.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="sites" class="card">
+          <p class="eyebrow">05 / No meu dia a dia</p>
+          <h2>Sites que mais uso</h2>
+          <ul class="site-list">
+            <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube <span>↗</span></a></li>
+            <li><a href="https://www.gmail.com" target="_blank" rel="noopener noreferrer">Gmail <span>↗</span></a></li>
+            <li><a href="https://www.cifraclub.com.br/" target="_blank" rel="noopener noreferrer">CifraClub <span>↗</span></a></li>
+            <li><a href="https://www.netflix.com/" target="_blank" rel="noopener noreferrer">Netflix <span>↗</span></a></li>
+            <li><a href="https://www.x.com" target="_blank" rel="noopener noreferrer">X (Twitter) <span>↗</span></a></li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="rotina" class="card">
+        <p class="eyebrow">06 / Consistência</p>
+        <h2>Minha rotina de estudos</h2>
+        <p class="section-lead">Um panorama semanal do que estou estudando.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Atividade</th>
+                <th scope="col">Duração</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Segunda-feira</th><td>Curso de Java</td><td>1h</td></tr>
+              <tr><th scope="row">Terça-feira</th><td>Linguagem de programação</td><td>2h30</td></tr>
+              <tr><th scope="row">Quarta-feira</th><td>Compliance</td><td>1h</td></tr>
+              <tr><th scope="row">Quinta-feira</th><td>Curso de Java</td><td>1h</td></tr>
+              <tr><th scope="row">Sexta-feira</th><td>Desenvolvimento Web</td><td>2h30</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contato-form" class="card contact-card">
+        <div class="contact-card__intro">
+          <p class="eyebrow">07 / Contato</p>
+          <h2>Tem uma ideia? Vamos conversar.</h2>
+          <p>Preencha o formulário e valide sua mensagem.</p>
+          <a href="mailto:kaiquecerrifialho1@gmail.com">kaiquecerrifialho1@gmail.com <span>↗</span></a>
+        </div>
+        <form id="seuFormulario" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome" required minlength="3" />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="voce@email.com" required />
+
+          <label for="telefone">Telefone <span>(opcional)</span></label>
+          <input type="tel" id="telefone" placeholder="(11) 99999-9999" />
+
+          <label for="assuntoSelect">Assunto</label>
+          <select id="assuntoSelect" required>
+            <option>Dúvida sobre curso</option>
+            <option>Sugestão</option>
+            <option>Orçamento</option>
+          </select>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" placeholder="Escreva sua mensagem..." required minlength="10"></textarea>
+
+          <label for="data">Prefere contato em que data? <span>(opcional)</span></label>
+          <input type="date" id="data" />
+
+          <button class="button button--primary" type="submit">Validar mensagem <span>→</span></button>
+          <p id="feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a class="footer__brand" href="#inicio">KC<span>.</span></a>
+      <p>© 2026 Kaique Cerri Fialho · Portfólio pessoal.</p>
+      <a class="back-to-top" href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+  </body>
+</html>
